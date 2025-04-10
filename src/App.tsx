@@ -1,13 +1,16 @@
-import MainDashboard from "./dashboard/MainDashboard";
-import Sidebar from "./dashboard/Sidebar";
+import Main from "./components/Main.tsx";
+import Header from "./components/Header";
+import Container from "./components/Container.tsx";
 
 
 function App() {
 
   return (
-    <div className="app">
-      <Sidebar />
-      <MainDashboard />
+    <div className="bg-gray-100">
+     <Container>
+        <Header />
+        <Main/>
+     </Container>
     </div>
   );
 }
