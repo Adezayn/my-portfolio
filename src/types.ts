@@ -1,5 +1,9 @@
-interface Todo {
+interface Project {
   id: number;
-  todoName: string;
-  status: boolean;
+  name: string;
+  description: string;
+  thumbnail: string;
+  techStack: string[];
+  githubLink: string;
+  demoLink: string;
 }

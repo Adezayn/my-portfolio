@@ -1,5 +1,7 @@
 
 import { motion } from "framer-motion";
+import Project from "../ui/Project";
+import { projects } from "../data";
 
  const Main = () => {
   return (
@@ -34,9 +36,9 @@ import { motion } from "framer-motion";
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
-        <div className="grid gap-6 md:grid-cols-2">
-        
+        <h2 className="text-2xl font-semibold mb-4">Selected Projects</h2>
+        <div className="flex overflow-x-scroll gap-6 md:grid md:grid-cols-2">
+         {projects.map(project => <Project {...project}/>)}
         </div>
       </motion.section>
 

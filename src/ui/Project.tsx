@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { FC } from "react"
-import { Card, CardContent } from "./Card";
+import { Card } from "./Card";
 
-const Project:FC = () => {
+const Project:FC<Project> = ({ name, description, demoLink, githubLink }) => {
   return (
     <motion.div
     initial={{ opacity: 0, y: 20 }}
@@ -11,15 +11,12 @@ const Project:FC = () => {
     viewport={{ once: true }}
   >
     <Card>
-      <CardContent className="p-4">
-        <h3 className="text-xl font-medium mb-2">Vendor Review App</h3>
-        <p className="text-gray-700 mb-2">
-          A simple app to check Instagram vendors' authenticity. Users can browse vendor profiles,
-          read reviews, and leave feedback.
-        </p>
-        <a href="#" className="text-blue-500 hover:underline mr-4">Live Demo</a>
-        <a href="#" className="text-blue-500 hover:underline">GitHub</a>
-      </CardContent>
+    <div className="p-4">
+      <h3 className="text-xl font-medium mb-2">{name}</h3>
+      <p className="text-gray-700 dark:text-gray-300 mb-2">{description}</p>
+      <a href={demoLink} className="text-blue-500 hover:underline mr-4">Live Demo</a>
+      <a href={githubLink} className="text-blue-500 hover:underline">GitHub</a>
+    </div>
     </Card>
   </motion.div>
   );

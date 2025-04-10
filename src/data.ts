@@ -1,17 +1,38 @@
-export const initalTodoList: Todo[] = [
+export const projects: Project[] = [
   {
     id: 1,
-    todoName: "Training at the Gym",
-    status: true,
-  },
-  {
-    id: 2,
-    todoName: "Play Paddle with friends",
-    status: false,
+    name: "Draft",
+    description: "",
+    thumbnail: "",
+    techStack: [],
+    githubLink: "",
+    demoLink: ""
   },
   {
     id: 3,
-    todoName: "Burger BBQ with family",
-    status: false,
+    name: "InstaReview",
+    description: "",
+    thumbnail: "",
+    techStack: [],
+    githubLink: "",
+    demoLink: ""
   },
+  {
+    id: 4,
+    name: "SingleEye",
+    description: "",
+    thumbnail: "",
+    techStack: [],
+    githubLink: "",
+    demoLink: ""
+  },
+  {
+    id: 2,
+    name: "Foodbag",
+    description: "",
+    thumbnail: "",
+    techStack: [],
+    githubLink: "",
+    demoLink: ""
+  }
 ];
