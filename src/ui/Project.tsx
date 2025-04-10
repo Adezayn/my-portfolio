@@ -25,4 +25,4 @@ const Project:FC = () => {
   );
 }
 
-export default Project
+export default Project;
