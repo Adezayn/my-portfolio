@@ -21,11 +21,12 @@ import { projects } from "../data";
         <motion.img
           src="/dolapo.JPG" // Replace with your image path
           alt="Your profile"
-          className=" h-72 rounded-[2vw] object-contain shadow-lg mt-10"
+          className=" h-72 rounded-[2vw] object-contain shadow-lg mt-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         />
+         <p className="cursor-pointer hover:underline transition duration-300 md:hidden block">RESUME</p>
       </section>
 
       {/* Projects Section */}
@@ -35,10 +36,11 @@ import { projects } from "../data";
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
+        id="projects"
       >
         <h2 className="text-2xl font-semibold mb-4">Selected Projects</h2>
-        <div className="flex overflow-x-scroll gap-6 md:grid md:grid-cols-2">
-         {projects.map(project => <Project {...project}/>)}
+        <div className="flex flex-col overflow-y-scroll gap-6 md:grid md:grid-cols-2">
+         {projects.map(project => <Project {...project} key={project.id}/>)}
         </div>
       </motion.section>
 

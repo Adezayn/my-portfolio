@@ -14,8 +14,11 @@ const Project:FC<Project> = ({ name, description, demoLink, githubLink }) => {
     <div className="p-4">
       <h3 className="text-xl font-medium mb-2">{name}</h3>
       <p className="text-gray-700 dark:text-gray-300 mb-2">{description}</p>
-      <a href={demoLink} className="text-blue-500 hover:underline mr-4">Live Demo</a>
-      <a href={githubLink} className="text-blue-500 hover:underline">GitHub</a>
+       <div className="flex flex-col md:flex-row gap-4 ml-6 md:ml-0 mt-4 ">
+          <a href={demoLink} className="text-blue-500 hover:underline">🔗 Live Demo</a>
+          <a href={githubLink} className="text-blue-500 hover:underline">🐙 GitHub</a>
+          <a href={githubLink} className="text-blue-500 hover:underline">📊 App Insights</a>
+       </div>
     </div>
     </Card>
   </motion.div>
