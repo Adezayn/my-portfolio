@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FC } from "react"
 import { Card } from "./Card";
+import { Link } from "react-router-dom";
 
 const Project:FC<Project> = ({ name, description, demoLink, githubLink }) => {
   return (
@@ -15,9 +16,9 @@ const Project:FC<Project> = ({ name, description, demoLink, githubLink }) => {
       <h3 className="text-xl font-medium mb-2">{name}</h3>
       <p className="text-gray-700 dark:text-gray-300 mb-2">{description}</p>
        <div className="flex flex-col md:flex-row gap-4 ml-6 md:ml-0 mt-4 ">
-          <a href={demoLink} className="text-blue-500 hover:underline">🔗 Live Demo</a>
-          <a href={githubLink} className="text-blue-500 hover:underline">🐙 GitHub</a>
-          <a href={githubLink} className="text-blue-500 hover:underline">📊 App Insights</a>
+          <Link to={demoLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">🔗 Live Demo</Link>
+          {githubLink && <Link to={githubLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">🐙 GitHub</Link>}
+          {/* <Link to={githubLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">📊 App Insights</Link> */}
        </div>
     </div>
     </Card>

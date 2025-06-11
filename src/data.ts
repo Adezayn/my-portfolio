@@ -5,8 +5,8 @@ export const projects: Project[] = [
     description: "",
     thumbnail: "",
     techStack: [],
-    githubLink: "",
-    demoLink: ""
+    githubLink: "https://github.com/Adezayn/freelance-finance-app",
+    demoLink: "https://freelance-finance-app.netlify.app/"
   },
   {
     id: 3,
@@ -14,8 +14,8 @@ export const projects: Project[] = [
     description: "",
     thumbnail: "",
     techStack: [],
-    githubLink: "",
-    demoLink: ""
+    githubLink: "https://github.com/Adezayn/insta-review",
+    demoLink: "https://instareview.netlify.app/"
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     description: "",
     thumbnail: "",
     techStack: [],
-    githubLink: "",
-    demoLink: ""
+    githubLink: "https://github.com/Adezayn/food-ecommerce",
+    demoLink: "https://foodbag-ecommerce.netlify.app"
   }
 ];
