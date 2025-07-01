@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import Project from "../ui/Project";
 import { projects } from "../data";
-import { Link } from "react-router-dom";
 
  const Main = () => {
   return (
