@@ -4,7 +4,7 @@ export const projects: Project[] = [
     name: "Draft",
     description: "",
     thumbnail: "",
-    techStack: [],
+    techStack: ['Reactjs', 'SCSS', 'React Motion'],
     githubLink: "https://github.com/Adezayn/freelance-finance-app",
     demoLink: "https://freelance-finance-app.netlify.app/"
   },
@@ -13,7 +13,7 @@ export const projects: Project[] = [
     name: "InstaReview",
     description: "",
     thumbnail: "",
-    techStack: [],
+    techStack: ['Nextjs', 'TailwindCSS', 'ShadcnUI', 'Firebase'],
     githubLink: "https://github.com/Adezayn/insta-review",
     demoLink: "https://instareview.netlify.app/"
   },
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     name: "SingleEye",
     description: "",
     thumbnail: "",
-    techStack: [],
+    techStack: ['Reactjs', 'TailwindCSS', 'React Motion', 'Redux Toolkit Query'],
     githubLink: "",
     demoLink: ""
   },
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     name: "Foodbag",
     description: "",
     thumbnail: "",
-    techStack: [],
+    techStack: ['Vanilla JavaScript', 'HTML', 'CSS'],
     githubLink: "https://github.com/Adezayn/food-ecommerce",
     demoLink: "https://foodbag-ecommerce.netlify.app"
   }

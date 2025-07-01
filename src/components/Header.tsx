@@ -1,6 +1,8 @@
 
-
-import { IoCopyOutline } from "react-icons/io5";
+import { TbMailFilled } from "react-icons/tb";
+import { Link } from "react-router-dom";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin,  FaGithubSquare } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -17,7 +19,12 @@ const Header = () => {
       </div>
       <div className="flex gap-5 items-center text-sm">
           <p>LET'S CONNECT 👉🏼</p>
-          <div className="bg-white px-4 py-2 rounded-full flex items-center gap-2"><p>dolapomola@gmail.com</p><IoCopyOutline /></div>
+          <div className="bg-white px-4 py-2 rounded-full flex items-end gap-4">
+             <Link to="https://www.linkedin.com/in/dolapoadebanjo/">< FaLinkedin size={18}/></Link>
+             <Link to="https://x.com/dolapo_adebanjo"><FaSquareXTwitter size={18}/></Link>
+             <Link to="mailto:dolapomola@gmail.com"><TbMailFilled size={20}/></Link>
+             <Link to="https://github.com/Adezayn"><FaGithubSquare size={20}/></Link>
+          </div>
       </div>
       </div>
     </div>
