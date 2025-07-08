@@ -13,11 +13,6 @@ import { projects } from "../data";
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h1 className="text-6xl font-bold mb-2 text-center">FRONTEND ENGINEER</h1>
-          <p className="text-sm text-gray-600 text-center w-full md:w:1/2 mx-auto">
-         I build secure, accessible, and high-performance web apps for fintech, SaaS, healthtech, and mission-driven organizations.
-         {/* with a strong focus on fintech solutions, SaaS products, healthtech platforms, and mission-driven organizations. */}
-          </p>
        </motion.div>
         <motion.img
           src="/dolapo.webp" // Replace with your image path
@@ -27,6 +22,11 @@ import { projects } from "../data";
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         />
+          <h1 className="text-6xl font-bold mb-2 text-center">FRONTEND ENGINEER</h1>
+          <p className="text-sm text-gray-600 text-center w-full md:w:1/2 mx-auto">
+         I build secure, accessible, and high-performance web apps for fintech, SaaS, healthtech, and mission-driven organizations.
+         {/* with a strong focus on fintech solutions, SaaS products, healthtech platforms, and mission-driven organizations. */}
+          </p>
         {/* <p>Open to remote work in Africa, UAE, Europe, USA</p> */}
          <p className="cursor-pointer hover:underline transition duration-300 md:hidden block">RESUME</p>
       </section>
