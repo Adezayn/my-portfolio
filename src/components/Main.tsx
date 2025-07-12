@@ -29,7 +29,7 @@ import { DolapoHeader } from "../assets/images";
           transition={{ duration: 0.6 }}
         />
         {/* <p>Open to remote work in Africa, UAE, Europe, USA</p> */}
-         <p className="cursor-pointer hover:underline transition duration-300 md:hidden block">RESUME</p>
+         <a className="text-sm cursor-pointer hover:underline transition duration-300 md:hidden block" href="https://drive.google.com/file/d/1PFH6z-kBYqfBfBOdjhx6eYhqqkoEcME4/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
       </section>
 
       {/* Projects Section */}
@@ -51,7 +51,7 @@ import { DolapoHeader } from "../assets/images";
       </motion.section>
 
       {/* Footer */}
-      <footer className="text-sm text-gray-500 text-center">
+      <footer className="text-sm text-gray-700 text-center">
         © {new Date().getFullYear()} Dolapo Adebanjo. All rights reserved.
       </footer>
     </main>

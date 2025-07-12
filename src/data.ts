@@ -1,4 +1,4 @@
-import { FoodBagThumbNail, FreelanceFinThumbNail, InstaReviewThumbNail, SingleEyeThumbNail } from "./assets/images";
+import { FoodBagThumbNail, FoodBagThumbNailSmall, FreelanceFinThumbNail, FreelanceFinThumbNailSmall, InstaReviewThumbNail, InstaReviewThumbNailSmall, SingleEyeThumbNail, SingleEyeThumbNailSmall } from "./assets/images";
 
 export const projects: Project[] = [
   {
@@ -6,6 +6,7 @@ export const projects: Project[] = [
     name: "Draft",
     description: "",
     thumbnail: FreelanceFinThumbNail,
+    thumbnailSmall: FreelanceFinThumbNailSmall,
     techStack: ['Reactjs', 'SCSS', 'React Motion'],
     githubLink: "https://github.com/Adezayn/freelance-finance-app",
     demoLink: "https://freelance-finance-app.netlify.app/"
@@ -15,6 +16,7 @@ export const projects: Project[] = [
     name: "InstaReview",
     description: "",
     thumbnail: InstaReviewThumbNail,
+    thumbnailSmall: InstaReviewThumbNailSmall,
     techStack: ['Nextjs', 'TailwindCSS', 'ShadcnUI', 'Firebase'],
     githubLink: "https://github.com/Adezayn/insta-review",
     demoLink: "https://instareview.netlify.app/"
@@ -24,6 +26,7 @@ export const projects: Project[] = [
     name: "SingleEye",
     description: "",
     thumbnail: SingleEyeThumbNail,
+    thumbnailSmall: SingleEyeThumbNailSmall,
     techStack: ['Reactjs', 'TailwindCSS', 'React Motion', 'Redux Toolkit Query'],
     githubLink: "",
     demoLink: "https://test.singleeye.io/"
@@ -33,6 +36,7 @@ export const projects: Project[] = [
     name: "Foodbag",
     description: "",
     thumbnail: FoodBagThumbNail,
+    thumbnailSmall: FoodBagThumbNailSmall,
     techStack: ['Vanilla JavaScript', 'HTML', 'CSS'],
     githubLink: "https://github.com/Adezayn/food-ecommerce",
     demoLink: "https://foodbag-ecommerce.netlify.app"
