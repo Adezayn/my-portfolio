@@ -1,4 +1,5 @@
 import DolapoHeader from "./dolapo.webp";
+import DolapoHeaderSmall from "./dolapo-small.webp";
 import FoodBagThumbNail from "./foodbag.webp";
 import FoodBagThumbNailSmall from "./foodbag-small.webp";
 import FreelanceFinThumbNail from "./freelance-finance.webp";
@@ -8,4 +9,4 @@ import InstaReviewThumbNailSmall from "./instareview-small.webp";
 import SingleEyeThumbNail from "./singleeye.webp"
 import SingleEyeThumbNailSmall from "./singleeye-small.webp"
 
-export {DolapoHeader, FoodBagThumbNail, FoodBagThumbNailSmall, FreelanceFinThumbNail, FreelanceFinThumbNailSmall, InstaReviewThumbNail, InstaReviewThumbNailSmall, SingleEyeThumbNail, SingleEyeThumbNailSmall}
+export {DolapoHeader, DolapoHeaderSmall, FoodBagThumbNail, FoodBagThumbNailSmall, FreelanceFinThumbNail, FreelanceFinThumbNailSmall, InstaReviewThumbNail, InstaReviewThumbNailSmall, SingleEyeThumbNail, SingleEyeThumbNailSmall}

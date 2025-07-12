@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Project from "../ui/Project";
 import { projects } from "../data";
-import { DolapoHeader } from "../assets/images";
+import { DolapoHeader, DolapoHeaderSmall } from "../assets/images";
 
  const Main = () => {
   return (
@@ -20,14 +20,17 @@ import { DolapoHeader } from "../assets/images";
          {/* with a strong focus on fintech solutions, SaaS products, healthtech platforms, and mission-driven organizations. */}
           </p>
        </motion.div>
-        <motion.img
+        <picture>
+         <source media="(max-width: 768px)" srcSet={DolapoHeaderSmall} />
+          <motion.img
           src={DolapoHeader} // Replace with your image path
-          alt="Your profile"
+          alt="Dolapo's face"
           className=" h-72 rounded-[2vw] object-contain shadow-lg mt-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         />
+      </picture>
         {/* <p>Open to remote work in Africa, UAE, Europe, USA</p> */}
          <a className="text-sm cursor-pointer hover:underline transition duration-300 md:hidden block" href="https://drive.google.com/file/d/1PFH6z-kBYqfBfBOdjhx6eYhqqkoEcME4/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
       </section>
