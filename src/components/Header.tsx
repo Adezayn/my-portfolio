@@ -12,7 +12,7 @@ const Header = () => {
       <div className="flex gap-20 items-center">
         <p className="font-bold">DOLAPO ADEBANJO</p>
         <nav className="hidden lg:flex gap-10">
-            <p className="text-sm cursor-pointer hover:underline transition duration-300">ABOUT</p>
+            {/* <p className="text-sm cursor-pointer hover:underline transition duration-300">ABOUT</p> */}
             <p className="text-sm cursor-pointer hover:underline transition duration-300" ><a href="#projects">PROJECTS</a></p>
             <a className="text-sm cursor-pointer hover:underline transition duration-300" href="https://drive.google.com/file/d/1PFH6z-kBYqfBfBOdjhx6eYhqqkoEcME4/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
           </nav>

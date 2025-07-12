@@ -2,12 +2,13 @@
 import { motion } from "framer-motion";
 import Project from "../ui/Project";
 import { projects } from "../data";
+import { DolapoHeader } from "../assets/images";
 
  const Main = () => {
   return (
     <main className="min-h-screen text-gray-900 px-4 pt-10 font-sans">
       {/* Header */}
-      <section className="mb-16 flex flex-col items-center gap-6" id="about">
+      <section className="mb-8 flex flex-col items-center gap-6" id="about">
        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -20,7 +21,7 @@ import { projects } from "../data";
           </p>
        </motion.div>
         <motion.img
-          src="/dolapo.webp" // Replace with your image path
+          src={DolapoHeader} // Replace with your image path
           alt="Your profile"
           className=" h-72 rounded-[2vw] object-contain shadow-lg mt-2"
           initial={{ opacity: 0, y: -20 }}
